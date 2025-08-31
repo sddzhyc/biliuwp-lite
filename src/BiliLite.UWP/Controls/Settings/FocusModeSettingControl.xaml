@@ -1,0 +1,34 @@
+﻿<UserControl
+    x:Class="BiliLite.Controls.Settings.FocusModeSettingControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="using:BiliLite.Models.Common"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:controls1="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:font="using:FontAwesome5"
+    xmlns:local="using:BiliLite.Controls.Settings"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:plugins="using:BiliLite.ViewModels.Plugins"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    mc:Ignorable="d">
+
+    <StackPanel MaxWidth="1200" Orientation="Vertical">
+        <StackPanel.ChildrenTransitions>
+            <TransitionCollection>
+                <RepositionThemeTransition />
+            </TransitionCollection>
+        </StackPanel.ChildrenTransitions>
+
+        <controls:SettingsCard Description="适用于学习网课等专注场景场景，具有隐藏首页推荐、热门标签页，隐藏视频相关推荐页等功能" Header="开启专注模式">
+            <controls:SettingsCard.HeaderIcon>
+                <font:FontAwesome Icon="Solid_Star" />
+            </controls:SettingsCard.HeaderIcon>
+            <ToggleSwitch
+                x:Name="swFocusMode"
+                Margin="0,-5,-88,-5"
+                Style="{StaticResource DefaultToggleSwitchStyle}" />
+        </controls:SettingsCard>
+    </StackPanel>
+</UserControl>

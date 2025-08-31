@@ -46,9 +46,14 @@ namespace BiliLite.Pages
         private readonly WatchLaterViewModel m_watchLaterViewModel;
         private bool m_loadUgcSeasonData = false;
 
+        public bool recommendTabVisible = !SettingService.GetValue<bool>(SettingConstants.Other.FOCUS_MODE_ENABLED, false);
         public VideoDetailPage()
         {
+            // 移除推荐Tab
+            // pivot.Items.Remove(recommendTab);
+            // 调试：recommendTabVisible的值输出
             this.InitializeComponent();
+            System.Diagnostics.Debug.WriteLine($"recommendTabVisible: {recommendTabVisible}");
             Title = "视频详情";
             this.Loaded += VideoDetailPage_Loaded;
             this.Player = this.player;

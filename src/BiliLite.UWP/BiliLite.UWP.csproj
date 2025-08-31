@@ -26,7 +26,7 @@
     <AppxBundle>Never</AppxBundle>
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-    <PackageCertificateThumbprint>54E7B70D1A779BCC3CCB6DE8C128AB1046CC747C</PackageCertificateThumbprint> 
+    <PackageCertificateThumbprint>54E7B70D1A779BCC3CCB6DE8C128AB1046CC747C</PackageCertificateThumbprint>
     <PackageCertificateKeyFile />
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
     <PreBuildEvent>powershell.exe -ExecutionPolicy RemoteSigned -File "$(MSBuildThisFileDirectory)PreBuildScript.ps1"</PreBuildEvent>
@@ -211,6 +211,9 @@
     </Compile>
     <Compile Include="Controls\Settings\ShortcutKeySettingsControl.xaml.cs">
       <DependentUpon>ShortcutKeySettingsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Settings\FocusModeSettingControl.xaml.cs">
+      <DependentUpon>FocusModeSettingControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Settings\UISettingsControl.xaml.cs">
       <DependentUpon>UISettingsControl.xaml</DependentUpon>
@@ -1377,6 +1380,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Settings\ShortcutKeySettingsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Settings\FocusModeSettingControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

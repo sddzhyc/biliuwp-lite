@@ -145,6 +145,16 @@
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
+            <PivotItem Margin="0">
+                <PivotItem.Header>
+                    <TextBlock FontSize="15">专注模式</TextBlock>
+                </PivotItem.Header>
+                <ScrollViewer Padding="12,0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <settings:FocusModeSettingControl />
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
             <Pivot.RightHeader>
                 <StackPanel Orientation="Horizontal">
                     <Button

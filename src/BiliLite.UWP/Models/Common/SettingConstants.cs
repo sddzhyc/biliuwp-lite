@@ -1593,6 +1593,11 @@ namespace BiliLite.Models.Common
             /// 外置插件
             /// </summary>
             public const string PLUGIN_LIST = "PluginList";
+
+            /// <summary>
+            /// 专注模式开关
+            /// </summary>
+            public const string FOCUS_MODE_ENABLED = "studyingModeEnabled";
         }
     }
 }
