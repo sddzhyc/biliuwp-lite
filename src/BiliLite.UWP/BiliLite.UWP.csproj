@@ -1849,7 +1849,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BiliLite_TemporaryKey.pfx" />
-    <PRIResource Include="Strings\zh-cn\Resources.resw" />
+    <PRIResource Include="Strings\zh-cn\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Tools\" />
